@@ -4,4 +4,15 @@ console.log('Hello from jsx!')
 
 var GroceryItemList = require('./components/GroceryItemList.jsx');
 
-React.render(<GroceryItemList />, app);
+var initial = [{
+  name: 'Waffles'
+},{
+  name: 'Ice Cream'
+},{
+  name: 'Beans',
+  purchased: true
+}, {
+  name: 'Cheese'
+}];
+
+React.render(<GroceryItemList items={initial} />, app);
