@@ -6,7 +6,7 @@ module.exports = {
     var id = guid.raw();
     listeners[id] = callback;
     return id;
-  }
+  },
   dispatch: function(payload){
     console.log('Dispatching...', payload);
     for (var id in listeners) {
