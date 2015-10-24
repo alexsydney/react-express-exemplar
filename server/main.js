@@ -12,6 +12,6 @@ app.get('/', function(req, res){
 .listen(7777);
 
 app.use(parser.json());
-app.use(parser.urlencoded());
+app.use(parser.urlencoded({extended: false}));
 
 require('./routes/items.js')(app);
