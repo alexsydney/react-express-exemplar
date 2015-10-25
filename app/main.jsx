@@ -1,7 +1,5 @@
 var React = require('react/addons');
 
-console.log('Hello from jsx!')
-
 var GroceryItemList = require('./components/GroceryItemList.jsx');
 
 var groceryItemStore = require('./stores/GroceryItemStore.jsx');
