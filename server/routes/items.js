@@ -18,12 +18,12 @@ module.exports = function (app){
 
   app.route("/api/items/:id")
   .delete(function(req, res){
-    groceryItem.find({
+    GroceryItem.findOne({
       _id: req.params.id
     }).remove();
   })
   .patch(function(req, res){
-    groceryItem.findOne({
+    GroceryItem.findOne({
       _id: req.body._id
     }, function(error, doc){
       for (var key in req.body) {
